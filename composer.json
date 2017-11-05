@@ -1,0 +1,44 @@
+{
+  "name": "intelligentspark/contao-module-skeleton",
+  "description": "A Contao CMS front-end module skeleton",
+  "keywords": [
+    "contao",
+    "frontend",
+    "module",
+    "skeleton",
+    "boilerplate"
+  ],
+  "type": "contao-module",
+  "license": "LGPL-3.0+",
+  "require": {
+    "php": ">=5.3.2",
+    "contao/core": ">=3.3.0,<4.0.0-dev",
+    "contao-community-alliance/composer-plugin": "*",
+    "terminal42/contao-namespace-class-loader":"~1.0"
+  },
+  "authors": [
+    {
+      "name": "intelligentspark",
+      "email": "fred.bliss@intelligentspark.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "IntelligentSpark\\": [
+        "system/modules/contao-module-skeleton/library/"
+      ]
+    }
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "": "system/modules/contao-module-skeleton"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist"
+  }
+}
