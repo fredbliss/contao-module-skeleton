@@ -19,4 +19,13 @@ class MyModule extends \Module {
      */
     protected $strTemplate = 'mod_my_module';
 
+
+
+    /**
+     * Generate the module
+     */
+    protected function compile()
+    {
+        $this->Template->html = (TL_MODE == 'FE') ? $this->html : htmlspecialchars($this->html);
+    }
 }
